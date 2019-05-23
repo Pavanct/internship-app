@@ -1,12 +1,12 @@
 <template>
-    
+    <p> This is the StudentList </p>
 </template>
-<style>
+<style scoped>
 
 </style>
 <script>
 export default {
-    
+    name: "StudentList"
 }
 </script>
 
