@@ -1,15 +1,18 @@
 <template>
   <div id="app">
-    <LandingPage />
+    <router-link to="/Login">Login</router-link>
+    <router-link to="/LandingPage">LandingPage</router-link>
+
+    <router-view></router-view>
   </div>
 </template>
-
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
 <script>
-import LandingPage from "./pages/LandingPage"
 
 export default{
   components: {
-    LandingPage
+    
   }
 }
 </script>

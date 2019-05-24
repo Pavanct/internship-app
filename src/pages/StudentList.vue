@@ -1,5 +1,7 @@
 <template>
-    <p> This is the StudentList </p>
+    <div>
+        <h3>This is the StudentList</h3> 
+    </div>
 </template>
 <style scoped>
 

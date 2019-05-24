@@ -1,7 +1,8 @@
 import LandingPage from "../pages/LandingPage";
 import StudentList from "../pages/StudentList"; 
 
-const routes = [
+const router = new VueRouter({
+ routes: [
     {
       path: "/",
       component: LandingPage,
@@ -19,6 +20,7 @@ const routes = [
         }
       ]
     }
-  ];
+  ]
+})
 
 export default routes;
