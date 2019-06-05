@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="login">
     <h3>Login</h3>
     <div>
       <b-form @submit="onSubmit" @reset="onReset" v-if="show" class="input">
@@ -15,8 +15,8 @@
           <b-form-input id="input-2" v-model="form.password" required placeholder="Password"></b-form-input>
         </b-form-group>
 
-        <b-button type="submit" variant="primary">Submit</b-button>
-        <b-button type="reset" variant="danger">Reset</b-button>
+        <b-button type="submit" variant="primary">Login</b-button>
+        <b-button type="reset" variant="danger">Cancel</b-button>
       </b-form>
       <b-card class="mt-3" header="Form Data Result" style="display: none">
         <pre class="m-0">{{ form }}</pre>
@@ -30,6 +30,16 @@
     text-align: center;
     align-content: center;
     margin: 0 auto;
+}
+#login{
+ position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+}
+button{
+  margin: 2pt;
 }
 </style>
 <script>

@@ -4,9 +4,10 @@ import Vue from 'vue'
 import './plugins/bootstrap-vue'
 import App from './App.vue'
 import VueRouter from 'vue-router'
-import LandingPage from './pages/LandingPage'
+import Home from './pages/Home'
 import Login from './pages/Login'
-
+import Register from './pages/Register'
+import Contact from './pages/Contact'
 
 Vue.use(VueRouter);
 Vue.config.productionTip = false
@@ -15,9 +16,11 @@ const router = new VueRouter({
   mode: 'history',
   base: __dirname,
   routes: [
-    { path: '/', component: LandingPage },
-    { path: '/landingpage', component: LandingPage},
+    { path: '/', component: Home },
+    { path: '/home', component: Home},
     { path: '/login', component: Login },
+    { path: '/register', component: Register },
+    { path: '/contact', component: Contact },
   ]
 });
 
